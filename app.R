@@ -16,7 +16,7 @@ library(dplyr)
 fields <- c("reportdate","newclients", "male","female","x1825","x2635","x3645","x45more","nativeamerican","black","White","Unknown","twoormore","othersingle","hispanic","nonhispanic","unknownethnicity","hmiseligible","locationattempt","located","inelligible","nostay","otherprogram","prescreensconducted","eligible","ineligiblefromscreen","k6toohigh","sentforrandom","randomized","declined","timebetweenpullandscreen","timebetweenrandomandenrol","timebetweenapprovalandmoveout","roomateassessments","roommateplacements","newplacements","singleoccplacements","roommatehousingplacements","recievingsubsidies","awaitinghousing","avgsinglerent","avgroommaterent","avglength","avgbetweenapprovalandlandlord")
 saveinfo <- c("name","clinician", "date")
 # Save a response
-# ---- This is one of the two functions we will change for every storage type ----
+# ---- function to save files to dropbox ----
 outputDir <- "responses"
 
 saveData <- function(data) {
